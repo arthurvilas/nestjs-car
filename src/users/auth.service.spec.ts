@@ -39,7 +39,7 @@ describe('AuthService', () => {
       ],
     }).compile();
 
-    authService = testingModule.get(AuthService);
+    authService = testingModule.get<AuthService>(AuthService);
   });
 
   it('can create an instance of AuthService', async () => {
