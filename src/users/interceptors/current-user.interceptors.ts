@@ -1,3 +1,8 @@
+/*
+ * Interceptors apparently run AFTER guards
+ * Our admin guard depends on current user info
+ * So this interceptor was turned into a middleware in ../middlewares
+ */
 import {
   CallHandler,
   ExecutionContext,
