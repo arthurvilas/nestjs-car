@@ -37,3 +37,5 @@ lerna-debug.log*
 # Environment
 .env.development
 .env.test
+*.sqlite
+*.http
