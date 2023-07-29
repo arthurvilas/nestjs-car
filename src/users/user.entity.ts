@@ -1,4 +1,4 @@
-import { Report } from 'src/reports/report.entity';
+import { Report } from '../reports/report.entity';
 import {
   AfterInsert,
   AfterRemove,
@@ -20,7 +20,7 @@ export class User {
   @Column()
   password: string;
 
-  @Column()
+  @Column({ default: false })
   admin: boolean;
 
   @OneToMany(() => Report, (report) => report.user)
